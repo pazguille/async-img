@@ -17,13 +17,25 @@ Also, you can use the standalone version:
 ## How-to
 
 ```js
-    // TODO
+// TODO
 ```
 
 ## API
-
+### asyncImg()
+Load images asynchronously.
 ```js
-    // TODO
+asyncImg();
+```
+
+### asyncImg.preload(imgs)
+Preload the given array of images.
+- `imgs` {array} - The given array of urls.
+```js
+asyncImg.preload([
+    'image1.jpg',
+    'image2.jpg',
+    'image3.jpg'
+]);
 ```
 
 ## Contact
