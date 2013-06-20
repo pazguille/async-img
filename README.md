@@ -1,4 +1,3 @@
-async-img
-=========
+# async-img
 
-Lazy loading images using the best practices.
+Asynchronous image loading with Vanilla JS.

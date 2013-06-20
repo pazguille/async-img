@@ -1,0 +1,14 @@
+{
+  "name": "async-img",
+  "repo": "pazguille/async-img",
+  "description": "Asynchronous image loading with Vanilla JS.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
