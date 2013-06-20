@@ -23,6 +23,7 @@ Also, you can use the standalone version:
 ## API
 ### asyncImg()
 Load images asynchronously.
+
 ```js
 asyncImg();
 ```
@@ -30,6 +31,7 @@ asyncImg();
 ### asyncImg.preload(imgs)
 Preload the given array of images.
 - `imgs` {array} - The given array of urls.
+
 ```js
 asyncImg.preload([
     'image1.jpg',
