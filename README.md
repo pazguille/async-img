@@ -2,7 +2,7 @@
 
 Asynchronous Image Loader.
 
-Yes, I know there are a lot of libraries, modules or plugins to load images asynchronously. But, the most have been built with jQuery as dependency. I really love jQuery, but I think there are lot of things we can do it without it as dependency.
+Yes, I know there are a lot of libraries, modules or plugins to load images asynchronously. But, the most have been built with jQuery as dependency. I really love jQuery, but I think there are lot of things we can do it without jQuery as dependency.
 
 This is the reason that I built this using [Vanilla JS](http://vanilla-js.com) :)
 
