@@ -4,12 +4,12 @@
  */
 module = module.exports = function () {
 
-    var imgs = document.querySelectorAll('[data-async]'),
+    var imgs = window.document.querySelectorAll('[data-async]'),
         len = imgs.length,
         img;
 
     while (len) {
-        img = imgs[len-=1];
+        img = imgs[len -= 1];
         img.src = img.getAttribute('data-async');
         img.removeAttribute('data-async');
     }
@@ -25,6 +25,6 @@ module.preload = function (imgs) {
     var len = imgs.length;
 
     while (len) {
-        new Image().src = imgs[len-=1];
+        new Image().src = imgs[len -= 1];
     }
 };
