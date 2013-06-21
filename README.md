@@ -43,7 +43,7 @@ window.onload = function () {
 };
 ```
 
-### Progressive Enhancement [TODO]
+### Progressive Enhancement
 If you are a front-end developer you must be know about [Progressive enhancement](http://alistapart.com/article/understandingprogressiveenhancement).
 Progressive enhancement focuses on the content. Images are content, and the content must be showed without JavaScript, images too.
 
