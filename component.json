@@ -1,7 +1,7 @@
 {
   "name": "async-img",
   "repo": "pazguille/async-img",
-  "description": "Asynchronous image loading with Vanilla JS.",
+  "description": "Asynchronous Image Loader.",
   "version": "0.0.1",
   "author": "Guille Paz <guille87paz@gmail.com>",
   "twitter": "@pazguille",
