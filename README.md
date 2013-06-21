@@ -50,7 +50,7 @@ window.onload = function () {
 If you are a front-end developer you must know about [Progressive enhancement](http://alistapart.com/article/understandingprogressiveenhancement).
 Progressive enhancement focuses on the content. Images are content, and the content must be showed without JavaScript, images too.
 
-The `.no-js` class should be removed by javascript script, so you can modify/display/hide things using css if js is disabled.
+The `.no-js` class should be removed by javascript, so you can display/hide things using css if JS is disabled.
 
 ```css
 .no-js [data-async] {
