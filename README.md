@@ -22,14 +22,17 @@ Also, you can use the standalone version:
 
 First, you should use the following HTML code on your images:
 ```html
-<img data-async="http://images5.fanpop.com/image/photos/24900000/kanzeon-cats-24910376-800-600.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="400" height="300">
+<img data-async="http://images5.fanpop.com/image/photos/24900000/kanzeon-cats-24910376-800-600.jpg"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+     width="400"
+     height="300">
 ```
 - `data-async` - URL of the image.
 - `src` - Temporary URL of the image (optional).
 - `width` - Set the width of the image (recommended).
 - `height` - Set the height of the image (recommended).
 
-Then, require the `async-img` component (avoids this step if you are using the standalone version):
+Then, require the `async-img` component (avoids this step if you'll use the standalone version):
 ```js
 var asyncImg = require('async-img');
 ```
@@ -44,7 +47,7 @@ window.onload = function () {
 ```
 
 ### Progressive Enhancement
-If you are a front-end developer you must be know about [Progressive enhancement](http://alistapart.com/article/understandingprogressiveenhancement).
+If you are a front-end developer you must know about [Progressive enhancement](http://alistapart.com/article/understandingprogressiveenhancement).
 Progressive enhancement focuses on the content. Images are content, and the content must be showed without JavaScript, images too.
 
 The `.no-js` class should be removed by javascript script, so you can modify/display/hide things using css if js is disabled.
@@ -57,7 +60,10 @@ The `.no-js` class should be removed by javascript script, so you can modify/dis
 
 To show images when JavaScript is not enabled you should include the image inside `<noscript>` tag.
 ```html
-<img data-async="image.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="400" height="300">
+<img data-async="image.jpg"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+     width="400"
+     height="300">
 <noscript>
     <img src="image.jpg" width="400" height="300">
 </noscript>
