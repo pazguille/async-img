@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+        <title>async-img Component.</title>
+<style>
+            body {
+                font-family: "Helvetica Neue", Helvetica, Arial, serif;
+                background-color: #eff0f2;
+                color: #34495e;
+                text-shadow: 0 -1px #FFF;
+                text-align: center;
+            }
+
+            body:before {
+                content: '';
+                display: block;
+                width: 180px;
+                height: 520px;
+                background: url('arrow.png') center 20px no-repeat;
+                position: absolute;
+                right: 120px;
+
+            }
+
+            h1 {
+                font-size: 4em;
+            }
+
+            h2 {
+                font-size: 2.5em;
+            }
+
+            ul {
+                list-style: none;
+                margin: 70px 0;
+                padding: 0;
+            }
+
+            li {
+                margin: 20px 0;
+            }
+
+            ul img {
+                border-radius: 100%;
+                border: 10px solid #1abc9c;
+                background: url('http://static.mlstatic.com/org-img/ch/assets/0.3/loading-big.gif') center center no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>async-img Component</h1>
+        <h2>Scroll down to load more cats<br>asynchronously!</h2>
+        <ul>
+            <li>
+                <img src="http://data.whicdn.com/images/35983568/ragdoll6_large.jpeg" width="400" height="400">
+            </li>
+            <li>
+                <img data-async="http://shannoneileenblog.typepad.com/.a/6a0120a5c8d9a9970c0120a8ced82d970b-400wi" width="400" height="400">
+            </li>
+            <li>
+                <img data-async="http://1.bp.blogspot.com/-Ap2-x5gL83A/UQ-XAyuWEKI/AAAAAAAAABY/0YRRzh3c53k/s1600/cute-and-funny-cats-and-kittens-5-400x400.jpg" width="400" height="400">
+            </li>
+
+            <!-- async -->
+            <li>
+                <img data-async="http://www.stepbystep.com/wp-content/uploads/2013/04/How-to-Bell-a-Cat.jpeg" width="400" height="400">
+            </li>
+            <li>
+                <img data-async="http://www.oztorah.com/wp-content/uploads/2007/12/cat.jpg" width="400" height="400">
+            </li>
+            <li>
+                <img data-async="http://24.media.tumblr.com/tumblr_lxa8dsfv6D1r7yvmwo1_400.gif" width="400" height="400">
+            </li>
+        </ul>
+
+        <a href="https://github.com/pazguille/async-img"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+        <script src="build.js"></script>
+        <script>
+            var asyncImg = require('async-img');
+            window.onscroll = function () {
+                window.onscroll = undefined;
+                setTimeout(function () {
+                    asyncImg();
+                }, 1000);
+            };
+        </script>
+    </body>
+</html>
