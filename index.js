@@ -1,6 +1,6 @@
 /**
  * Load images asynchronously.
- * @param {NodeList} [imgs] - The given NodeList of images.
+ * @param {NodeList} [imgs] -  A NodeList of images. By default, its value is the result of `querySelectorAll('[data-async]'
  * @returns {NodeList}
  */
 module = module.exports = function (imgs) {
@@ -11,7 +11,7 @@ module = module.exports = function (imgs) {
         len = imgs.length,
         img;
 
-    for (; i < len; i += 1) {
+    for (i; i < len; i += 1) {
         img = imgs[i];
         img.src = img.getAttribute('data-async');
         img.removeAttribute('data-async');
