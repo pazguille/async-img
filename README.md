@@ -70,8 +70,9 @@ To show images when JavaScript is not enabled you should include the image insid
 ```
 
 ## API
-### asyncImg()
+### asyncImg([imgs])
 Load images asynchronously.
+- `imgs` {NodeList} [optional] - A NodeList of images. By default, its value is the result of `querySelectorAll('[data-async]')` CSS selector.
 ```js
 asyncImg();
 ```
