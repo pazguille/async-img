@@ -3,16 +3,19 @@
 
     /**
      * Load images asynchronously.
+     * @param {NodeList} [imgs] -  A NodeList of images. By default, its value is the result of `querySelectorAll('[data-async]'
      * @returns {NodeList}
      */
-    function asyncImg() {
+    function asyncImg(imgs) {
 
-        var imgs = window.document.querySelectorAll('[data-async]'),
+        imgs = imgs || window.document.querySelectorAll('[data-async]');
+
+        var i = 0,
             len = imgs.length,
             img;
 
-        while (len) {
-            img = imgs[len -= 1];
+        for (i; i < len; i += 1) {
+            img = imgs[i];
             img.src = img.getAttribute('data-async');
             img.removeAttribute('data-async');
         }
