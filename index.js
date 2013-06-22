@@ -1,15 +1,18 @@
 /**
  * Load images asynchronously.
+ * @param {NodeList} [imgs] - The given NodeList of images.
  * @returns {NodeList}
  */
-module = module.exports = function () {
+module = module.exports = function (imgs) {
 
-    var imgs = window.document.querySelectorAll('[data-async]'),
+    imgs = imgs || window.document.querySelectorAll('[data-async]');
+
+    var i = 0,
         len = imgs.length,
         img;
 
-    while (len) {
-        img = imgs[len -= 1];
+    for (; i < len; i += 1) {
+        img = imgs[i];
         img.src = img.getAttribute('data-async');
         img.removeAttribute('data-async');
     }
