@@ -2,9 +2,9 @@
 
 Asynchronous Image Loader.
 
-Yes, I know there are a lot of libraries, modules or plugins to load images asynchronously. But, the most have been built with jQuery as dependency. I really love jQuery, but I think there are lot of things we can do it without jQuery as dependency.
+Yes, I know there are a lot of libraries, modules or plugins to load images asynchronously. But, most of them have been built with jQuery as dependency. I really love jQuery, but I think there are a lot of things we can do without jQuery.
 
-This is the reason that I built this using [Vanilla JS](http://vanilla-js.com) :)
+This is the reason why I built this using [Vanilla JS](http://vanilla-js.com) :)
 
 ## Installation
 
@@ -32,12 +32,12 @@ First, you should use the following HTML code on your images:
 - `width` - Set the width of the image (recommended).
 - `height` - Set the height of the image (recommended).
 
-Then, require the `async-img` component (avoids this step if you'll use the standalone version):
+Then, require the `async-img` component (avoid this step if you use the standalone version):
 ```js
 var asyncImg = require('async-img');
 ```
 
-Now, starts to load your images asynchronously!
+Now, you can start to load your images asynchronously!
 
 ```js
 // Onload
@@ -48,9 +48,9 @@ window.onload = function () {
 
 ### Progressive Enhancement
 If you are a front-end developer you must know about [Progressive enhancement](http://alistapart.com/article/understandingprogressiveenhancement).
-Progressive enhancement focuses on the content. Images are content, and the content must be showed without JavaScript, images too.
+Progressive enhancement focuses on the content. Images are content, and the content must be showed without JavaScript and images too.
 
-The `.no-js` class should be removed by JavaScript, so you can display/hide things using css if JS is disabled.
+The `.no-js` class should be removed by JavaScript, so you can display/hide things using CSS if JavaScript is disabled.
 
 ```css
 .no-js [data-async] {
@@ -58,7 +58,7 @@ The `.no-js` class should be removed by JavaScript, so you can display/hide thin
 }
 ```
 
-To show images when JavaScript is not enabled you should include the image inside `<noscript>` tag.
+To show images when JavaScript is not enabled you should include the images inside `<noscript>` tag.
 ```html
 <img data-async="image.jpg"
      src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
