@@ -7,7 +7,7 @@ module = module.exports = function (imgs) {
 
     imgs = imgs || window.document.querySelectorAll('[data-async]');
 
-    if (imgs !== undefined && imgs.length === undefined) {
+    if (imgs.length === undefined) {
          imgs = [imgs];
     }
 
