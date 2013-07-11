@@ -10,6 +10,10 @@
 
         imgs = imgs || window.document.querySelectorAll('[data-async]');
 
+        if (imgs !== undefined && imgs.length === undefined) {
+            imgs = [imgs];
+        }
+
         var i = 0,
             len = imgs.length,
             img;
