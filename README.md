@@ -1,4 +1,6 @@
-# async-img
+# async-img [DEPRECATED]
+
+> You should use [aload](https://github.com/pazguille/aload) for an updated and mantained version.
 
 Asynchronous Image Loader.
 
